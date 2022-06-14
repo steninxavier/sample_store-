@@ -1,12 +1,18 @@
-import React from 'react'
-
-const Product = ({key, title, description,price,image}) => {
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
+const Product = () => {
+    const products= useSelector( (state)=> state.product.product)
+    console.log(products)
+    
   return (
     <div>
-        <h1>{title}</h1>
-        <h2>{description}</h2>
-         <img src={image}/>
-         <h6>{price}</h6>
+      {products.map((product)=>(
+        <>
+        <h1>{product.title}</h1>
+        <img src={product.image}/>
+        </>
+      ))}
+        
     </div>
   )
 }
