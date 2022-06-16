@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { products } from '../redux/Productslice';
 import { useDispatch } from 'react-redux/es/hooks/useDispatch';
 import Product from './Product';
+
 const Productlist = () => {
     const dispatch= useDispatch();
     const productsData=async()=>{
@@ -14,9 +15,10 @@ const Productlist = () => {
    },[])
   return (
     <div>
-    <Product/>
+      <Product/>
     </div>
+    
+   
   )
 }
-
 export default Productlist

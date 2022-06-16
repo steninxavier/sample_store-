@@ -1,10 +1,11 @@
 import React from 'react'
-import Productlist from './components/Productlist'
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Index from './router/Index';
 
 const App = () => {
   return (
     <div>
-      <Productlist/>
+  <Index/>
       
     </div>
   )
