@@ -15,7 +15,7 @@ justify-content:space-between ;
 border: solid black 2px ;
 margin:50px ;
 width:370px ;
-height:400px ;
+height:410px ;
 cursor: pointer;
 border-radius: 25px ;
 &:hover{
