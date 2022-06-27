@@ -19,7 +19,7 @@ flex:2 ;
 display: flex ;
 align-items: center ;
 justify-content:center ;
-font-size:70px ;
+font-size:40px ;
 font-weight:700;
 text-shadow: 2px 2px lightgrey;
 `
