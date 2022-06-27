@@ -5,6 +5,9 @@ import {Link} from 'react-router-dom'
 const MainContainer= styled.div`
 display:flex ;
 height: 140px ;
+@media (max-width: 420px) {
+    flex-direction: column;
+  }
 `
 
 const Container= styled.div`
@@ -12,6 +15,10 @@ flex:3 ;
 display: flex;
 align-items: center ;
 justify-content:space-around ;
+@media (max-width: 420px) {
+    flex-direction: column;
+    padding: 5px;
+  }
 `;
 
 const Logo= styled.div`
@@ -27,6 +34,10 @@ const Menu = styled.div`
 cursor: pointer;
 font-size: 25px ;
 font-weight: 500 ;
+@media (max-width: 420px) {
+    padding:2px;
+  }
+
 &:hover{
   color: lightskyblue ;
 }
