@@ -1,8 +1,6 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux/es/exports'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-
 const MainContainer= styled.div`
 display:flex ;
 flex-wrap:wrap;
@@ -36,26 +34,21 @@ font-weight:bold ;
 padding:20px ;
 
 `
-const Product = () => {
-    const products= useSelector( (state)=> state.product.product)
-    console.log(products)
-    
+const Electronicssingle = () => {
+  const products= useSelector((state)=>state.electronic.electronic)
   return (
    <MainContainer>
-   
       {products.map((product)=>(
-        <Link to={`/product/${product.id}`} style={{color:"black",textDecoration: "none"}}>
-        <Container key={product.id}>
-        <Heading>{product.title}</Heading>
-        <Image src={product.image}/>
-        <h3>$ {product.price}</h3>
+      
+       <Container key={product.id}>
+       <Heading>{product.title}</Heading>
+       <Image src={product.image}/>
+       <h3>$ {product.price}</h3>
 
-        </Container>
-        </Link>
+       </Container>
       ))}
-        
     </MainContainer>
   )
 }
 
-export default Product
+export default Electronicssingle
